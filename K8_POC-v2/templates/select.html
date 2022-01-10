@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+/* Clear floats after the columns */
+section {
+  background-color: #ADD8E6;
+  padding: 280px;
+  text-align: center;
+  color: black;
+  background-image: url(https://static.dw.com/image/58995439_101.jpg)
+
+}
+
+<!--/* Style the footer */-->
+<!--footer {-->
+<!--  background-color: #888;-->
+<!--  padding: 20px;-->
+<!--  text-align: center;-->
+<!--  color: white;-->
+
+<!--}-->
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<body>
+<header>
+<h2>Select your Fav Club</h2>
+</header>
+
+
+
+<section>
+<form method="post">
+  <label for="Club">Choose your Favorite Club:</label>
+  <select id="Club" name="Club">
+    <option value="RealMadrid">RealMadrid</option>
+    <option value="ManchesterUnited">ManchesterUnited</option>
+    <option value="ParisSaintGermain">ParisSaintGermain</option>
+  </select>
+  <input type="submit">
+</form>
+</section>
+
+</body>
+</html>
